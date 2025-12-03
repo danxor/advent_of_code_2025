@@ -17,4 +17,13 @@ extension String {
 
         return result
     }
+
+    func substr(from: Int, len: Int) -> String {
+        var tmp = self.dropFirst(from)
+        if tmp.count > len {
+            tmp.removeLast(tmp.count - len)
+        }
+
+        return String(tmp)
+    }
 }
