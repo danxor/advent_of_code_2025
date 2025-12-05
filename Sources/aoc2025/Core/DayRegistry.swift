@@ -5,6 +5,7 @@ struct DayRegistry {
             Day02(),
             Day03(),
             Day04(),
+            Day05()
         ]
     }
 
