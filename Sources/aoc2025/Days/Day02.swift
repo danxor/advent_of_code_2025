@@ -82,10 +82,6 @@ struct Day02: DaySolver {
 
             for i in low..<hi+1 {
                 let s = String(i)
-                if s == "2121212118" {
-                    sum += 1
-                    sum -= 1
-                }
                 if is_invalid(s) {
                     sum += i
                 }
