@@ -26,6 +26,17 @@ extension String {
 
         return String(tmp)
     }
+
+    func at(_ at: Int) -> String {
+        let index = self.index(self.startIndex, offsetBy: at)
+        let part = self[index...index]
+        return String.init(part)
+    }
+
+    mutating func replace(_ at: Int, with: String) {
+        let index = self.index(self.startIndex, offsetBy: at)
+        self.replaceSubrange(index...index, with: with)
+    }
 }
 
 struct Utils {
