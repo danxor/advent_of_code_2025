@@ -12,6 +12,7 @@ struct DayRegistry {
             Day09(),
             Day10(),
             Day11(),
+            Day12()
         ]
     }
 
